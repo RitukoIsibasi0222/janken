@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-style: normal;
+  color: #242424;
+}
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container {
+  padding: 30px;
+}
+
+.main {
+  max-width: 960px;
+  margin: auto;
+}
+
+.disp-area-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+.disp-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  row-gap: 20px;
+  max-width: 250px;
+  width: 100%;
+}
+
+.disp-area__text {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.choose {
+  margin: 20px auto;
+
+  p {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+.choose__img-box {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+
+  img {
+    max-width: 150px;
+    width: 20%;
+    cursor: pointer;
+  }
+}
+
+.count {
+  display: flex;
+
+  p {
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+.judgement {
+  height: 2rem;
+  text-align: center;
+}
+.reset {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  background: #242424;
+  color: #ffffff;
+  border: unset;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .disp-area-container {
+    column-gap: 15px;
+  }
+  .disp-area__text {
+    font-size: 1rem;
+  }
+
+  .choose {
+    margin: 10px auto 20px;
+  }
+  .choose__img-box {
+    justify-content: space-around;
+  }
+
+  .disp-area {
+    row-gap: 8px;
+  }
+  .disp-area img {
+    width: 60%;
+  }
+
+  .count p {
+    font-size: 1.5rem;
+  }
+
+  .result {
+    flex-direction: column;
+    margin-top: 20px;
+
+    p {
+        max-width: 300px;
+        width: 100%;
+        font-size: 1.5rem
+    }
+  }
+}

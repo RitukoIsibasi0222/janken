@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+        <main class="main">
+          <h1>じゃんけん３回勝負！</h1>
+          <div class="disp-area-container">
+            <div class="disp-area">
+              <img class="computer" src="./img/01.png" alt="" />
+              <p class="disp-area__text">コンピュータ</p>
+            </div>
+            <div class="disp-area">
+              <img class="you" src="./img/03.png" alt="" />
+              <p class="disp-area__text">あなた</p>
+            </div>
+          </div>
+
+          <p class="judgement"></p>
+
+          <div class="choose">
+            <div class="choose__img-box">
+              <img class="_01" src="./img/01.png" alt="グー" />
+              <img class="_02" src="./img/02.png" alt="チョキ" />
+              <img class="_03" src="./img/03.png" alt="パー" />
+            </div>
+            <p>選んでね！</p>
+          </div>
+        <div class="count">
+            <p><span id="count__computer" class="count__computer">0</span> 勝</p>
+            <p><span id="count__player" class="count__player">0</span> 勝</p>
+        </div>
+        <div class="result">
+            <p>結果：<span class="result__text">--</span></p>
+
+            <button id="reset" class="reset">リセット</button>
+        </main>
+    </div>
+  </body>
+</html>
